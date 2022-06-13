@@ -45,5 +45,47 @@ alert('estas al dia con tu cuota')
     alert('llevas adelantadas ' + mesesDeudores +' cuota/s') 
     }
 
+// PRACTICAS VARIAS
 
 
+// let numeroos = [9, 45, 6, 20, 71, 13, 32, 87]
+// numeroos.sort((a,b) =>{
+//     if(a === b){
+//         return 0;
+//     }
+//     if(a<b){
+//         return -1;
+//     }
+//     else{
+//         return 1;
+//     }
+// });
+// console.log(numeroos)
+
+// let numeros = [65, 32, 85, 47, 12, 3, 99, 55]
+// numeros.sort((a,b) =>{
+//     if(a === b){
+//         return 1
+//     }
+//     else if (a<b){
+//         return 1
+//     }
+//     else{
+//         return -1
+//     }
+// })
+// console.log(numeros)
+
+// let numbers = [14,6,98,52,64,31,78,99,5,162,32,71,2,0]
+// numbers.sort((a,b)=>{
+//     if(a===b){
+//         return 0
+//     }
+//     else if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(numbers)
