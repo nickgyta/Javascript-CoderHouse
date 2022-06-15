@@ -89,3 +89,10 @@ alert('estas al dia con tu cuota')
 //     }
 // })
 // console.log(numbers)
+
+
+let numbers = [14,6,98,52,64,31,78,99,5,162,32,71,2,0]
+
+for(let i = 0; i < numbers.length; i++){
+    console.log(numbers [i])
+}
