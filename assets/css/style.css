@@ -213,7 +213,7 @@ h97 {
     font-weight: normal;
 }
 h97 p{
-        color: ##f3c96a;
+        color: #f3c96a;
         padding-bottom: 19px;
     }
     .list {
@@ -229,9 +229,13 @@ h97 p{
         z-index: 100;
     }
     footer {
+        display: block;
+        width: 200vh;
+        height: 8vh;
         padding: 12px 0;
         position: relative;
-        margin-top: 241px;
+        overflow: hidden;
+        margin-top: 30%;
         background: #000000b5;
     }
     .aligncenter {
@@ -241,6 +245,7 @@ h97 p{
         margin: 0 auto;
         width: 940px;
         position: relative;
+        
     }
     .privacy {
         color: #f3c96a;

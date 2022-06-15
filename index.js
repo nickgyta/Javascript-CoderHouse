@@ -45,54 +45,51 @@ alert('estas al dia con tu cuota')
     alert('llevas adelantadas ' + mesesDeudores +' cuota/s') 
     }
 
-// PRACTICAS VARIAS
+// ARRAYS - ORDENAR NUMERO DE LOS PARTICIPANTES CLASIFICADOS PARA LA PROXIMA COMPETENCIA DE CROSSFIT DE LA PROVINCIA
 
 
-// let numeroos = [9, 45, 6, 20, 71, 13, 32, 87]
-// numeroos.sort((a,b) =>{
-//     if(a === b){
-//         return 0;
-//     }
-//     if(a<b){
-//         return -1;
-//     }
-//     else{
-//         return 1;
-//     }
-// });
-// console.log(numeroos)
+let numeroos = [9, 11, 6, 2, 17, 13, 32, 27]
+numeroos.sort((a,b) =>{
+    if(a === b){
+        return 0;
+    }
+    if(a<b){
+        return -1;
+    }
+    else{
+        return 1;
+    }
+});
+console.log(numeroos)
 
-// let numeros = [65, 32, 85, 47, 12, 3, 99, 55]
-// numeros.sort((a,b) =>{
-//     if(a === b){
-//         return 1
-//     }
-//     else if (a<b){
-//         return 1
-//     }
-//     else{
-//         return -1
-//     }
-// })
-// console.log(numeros)
+// ORDENAR PARTICIPANTES CLASIFICADOS DEL ULTIMO AL PRIMER PUESTO
 
-// let numbers = [14,6,98,52,64,31,78,99,5,162,32,71,2,0]
-// numbers.sort((a,b)=>{
-//     if(a===b){
-//         return 0
-//     }
-//     else if(a<b){
-//         return -1
-//     }
-//     else{
-//         return 1
-//     }
-// })
-// console.log(numbers)
+let numeros = [65, 32, 85, 47, 12, 3, 99, 55]
+numeros.sort((a,b) =>{
+    if(a === b){
+        return 1
+    }
+    else if (a<b){
+        return 1
+    }
+    else{
+        return -1
+    }
+})
+console.log(numeros)
 
+// ORDENAR EL TOTAL DE PARTICIPANTES YA CLASIFICADOS ANTERIORMENTE
 
-let numbers = [14,6,98,52,64,31,78,99,5,162,32,71,2,0]
-
-for(let i = 0; i < numbers.length; i++){
-    console.log(numbers [i])
-}
+let numbers = [14,6,98,52,64,31,78,99,5,12,32,71,2,0]
+numbers.sort((a,b)=>{
+    if(a===b){
+        return 0
+    }
+    else if(a<b){
+        return -1
+    }
+    else{
+        return 1
+    }
+})
+console.log(numbers)
