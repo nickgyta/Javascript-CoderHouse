@@ -230,12 +230,10 @@ h97 p{
     }
     footer {
         display: block;
-        width: 200vh;
-        height: 8vh;
+        width: 100%;
         padding: 12px 0;
         position: relative;
         overflow: hidden;
-        margin-top: 30%;
         background: #000000b5;
     }
     .aligncenter {
