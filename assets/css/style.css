@@ -250,3 +250,8 @@ h97 p{
         font-size: 12px;
         line-height: 20px;
     }
+    .card-img, .card-img-top {
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+        max-width: 50%;
+    }

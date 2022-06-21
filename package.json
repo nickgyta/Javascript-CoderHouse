@@ -54,6 +54,7 @@
     "README.md"
   ],
   "dependencies": {
+    "mdb-ui-kit": "^4.2.0",
     "tw-elements": "^1.0.0-alpha12"
   }
 }
