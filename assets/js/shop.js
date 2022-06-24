@@ -1,14 +1,5 @@
 // E-COMMERCE del GYM
-// const listaItems = []
-// let cantidad = 5
 
-// do{
-//     let entrada = prompt('Ingresar el tipo de artículo')
-//     listaItems.push(entrada.toUpperCase());
-//     console.log(listaItems.length);
-// }while(listaItems.length != cantidad){
-// const nuevaLista = listaItems.concat([])
-// console.log(nuevaLista.join('\n'))
 
 
 
@@ -72,44 +63,56 @@ const carrito = [];
 let total = 0;
 
 function gestionarItems() {
-    let store = document.getElementById('store');
+    let store = document.querySelector('#store');
 
     item.forEach((e) => {
-        let productoHTML = '\
-            <div class="d-flex justify-content-between p-3">\
-            <p class="lead mb-0">Oferta del Dia '+e.iD+'</p>\
-            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong" style="width: 35px; height: 35px;">\
-            <p class="text-white mb-0 small">'+e.cantidad+'</p>\
-          </div>\
-        </div>\
-        <img src="'+e.imagen+'"\
-          class="card-img-top" alt="Laptop" />\
-        <div class="card-body">\
-          <div class="d-flex justify-content-between">\
-            <p class="small"><a href="#!" class="text-muted">Indumentaria de entrenamiento</a></p>\
-            <p class="small text-danger"><s>' +e.precio+ ' </s></p>\
-          </div>\
-          <div class="d-flex justify-content-between mb-3">\
-            <h5 class="mb-0">'+e.tipo+', '+e.marca+'<hr>Color '+e.color+'<hr>Talle '+e.talle+'</h5>\
-            <h5 class="text-dark mb-0">'+e.promo+'</h5>\
-          </div>\
-          <div class="d-flex justify-content-between mb-2">\
-            <p class="text-muted mb-0">Disponibles: <span class="fw-bold">6</span></p>\
-            <div class="ms-auto text-warning">\
-              <i class="fa fa-star"></i>\
-              <i class="fa fa-star"></i>\
-              <i class="fa fa-star"></i>\
-              <i class="fa fa-star"></i>\
-              <i class="fa fa-star"></i>\
-            </div>\
-          </div>\
-        </div>\
-        </div>\
-        '
+        let productoHTML = `
+            <div class="d-flex justify-content-between p-3">
+            <p class="lead mb-0">Oferta del Dia</p>
+            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong" style="width: 35px; height: 35px;">
+            <p class="text-white mb-0 small">${e.cantidad}</p>
+          </div>
+        </div>
+        <img src="${e.imagen}"
+          class="card-img-top" alt="Laptop" />
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <p class="small"><a href="#!" class="text-muted">Indumentaria de entrenamiento</a></p>
+            <p class="small text-danger"><s>${e.precio} </s></p>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <h5 class="mb-0">${e.tipo}, ${e.marca}<hr>Color ${e.color}<hr>Talle ${e.talle}</h5>
+            <h5 class="text-dark mb-0">${e.promo}</h5>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <p class="text-muted mb-0">Disponibles: <span class="fw-bold">6</span></p>
+            <div class="ms-auto text-warning">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div><a href="#!" class="btn btn-primary" onClick='agregarItemAlCarrito ${e.iD}'>Agregar al carrito</a>
+        </div>
+        </div>
+        `
         store.innerHTML += productoHTML
     });
 }
 gestionarItems();
+
+function agregarItemAlCarrito(iD){
+    let producto = item.find(producto=> producto.iD == iD);
+    let productoEnCarrito = carrito.find(producto => producto.iD == iD)
+    if(productoEnCarrito){
+        productoEnCarrito.cantidad++;
+    }else{
+        producto.cantidad = 1;
+        carrito.push(producto);
+        console.log(carrito)
+    }
+}
 
 //     carrito(){
 //         console.log('Has seleccionado el siguiente item: ' + this.tipo + ' talla ' + this.talle + ', de marca ' + this.marca + ' y de color ' + this.color+' al costo de $'+this.precio+' pesos.')

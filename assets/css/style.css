@@ -255,3 +255,9 @@ h97 p{
         border-top-right-radius: calc(0.25rem - 1px);
         max-width: 50%;
     }
+    
+    @media (min-width: 2100px){
+    .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}}
