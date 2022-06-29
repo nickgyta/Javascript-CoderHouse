@@ -1,6 +1,3 @@
-@import '/css/bulma.css';
-@import 'tw-elements';
-
 .justify-center {
     background: #000000a8;
     justify-content: space-evenly!important;
@@ -261,3 +258,10 @@ h97 p{
     flex: 0 0 auto;
     width: 33.33333333%;
 }}
+#carroo {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 1000;
+    margin-left: 300px;
+    font-size: xxx-large;
+    color: rgb(13 188 240);
+}
