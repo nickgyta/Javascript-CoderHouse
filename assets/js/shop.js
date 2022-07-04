@@ -10,7 +10,11 @@
     
     const btnVaciarCarrito = document.querySelector('#vaciarCarrito')
 
-    let carrito = []
+    let carrito 
+    const carritoEnLocalStorage = JSON.parse(localStorage.getItem('carrito'))
+
+    
+
 
     items.forEach((item)=>{
         const div = document.createElement('div')
@@ -54,6 +58,8 @@
         const prod = items.find( (item) => item.iD === iD) 
         carrito.push(prod)
 
+        localStorage.setItem('carrito', JSON.stringify(carrito))
+
         console.log(carrito)
         renderCarrito()
         visualizarCantidad()
@@ -65,13 +71,16 @@
         const indice = carrito.indexOf(remover)
         carrito.splice(indice, 1)
 
-        console.log(carrito)
+        localStorage.setItem('carrito', JSON.stringify(carrito))
+
         renderCarrito()
         visualizarCantidad()
         renderTotal()
     }
     const VaciarCarrito = () => {
-    carrito = []
+    carrito.length = 0
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
 
         renderCarrito()
         visualizarCantidad()
@@ -109,7 +118,15 @@
         precioTotal.innerText = total
     }
 
-
+    if(carritoEnLocalStorage){
+        carrito = carritoEnLocalStorage
+        
+        renderCarrito()
+        visualizarCantidad()
+        renderTotal()
+    } else{
+        carrito = []
+    }
 
 
 
