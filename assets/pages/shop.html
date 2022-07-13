@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
@@ -92,7 +93,8 @@
     </header>
 
     <section>
-        <div class="bg-white">
+        <div class="bg-white"style="
+        background-color: #000000eb !important;">
             <div class="pt-6">
               <nav aria-label="Breadcrumb">
                 <ol role="list" class="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -125,8 +127,9 @@
             </div>
             
         </div>
+    </section>
               <!-- Image gallery -->
-              <section style="background-color: #eee;">
+              <section style="background-color: #000000b5;">
                 <div class="container py-5">
                   <div class="row">
                     <div class="col-md-12 col-lg-4 mb-4 mb-lg-0"id="store" >
@@ -150,28 +153,6 @@
               </div>
             </section>
 
-            <section style="background-color: #eee;">
-              <div class="container py-5">
-                <div class="row">
-                  <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
-                    <div class="card" id="store">
-                      
-                  </div>
-                  
-                  <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
-                    <div class="card" id="store">
-                      
-                  </div>
-                  <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
-                    <div class="card" id="store">
-                      
-                    </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-              </div>
-          </section>
           <div class="modal-contenedor">
             <div class="modal-carrito">
                 <h3>Carrito</h3>
@@ -183,6 +164,43 @@
                 <button id="vaciarCarrito" class="boton-eliminar">Vaciar carrito</button>
             </div>
         </div>
+
+
+        <section>
+        <div class="bg-white"style="
+        background-color: #000000eb !important;">
+            <div class="pt-6">
+              <nav aria-label="Breadcrumb">
+                <ol role="list" class="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
+                  <li>
+                    <div class="flex items-center">
+                      <a href="#" class="mr-2 text-sm font-medium text-gray-900"> Men </a>
+                      <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-5 text-gray-300">
+                        <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+                      </svg>
+                    </div>
+                  </li>
+          
+                  <li>
+                    <div class="flex items-center">
+                      <a href="#" class="mr-2 text-sm font-medium text-gray-900"> Ropa Deportiva </a>
+                      <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-5 text-gray-300">
+                        <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+                      </svg>
+                    </div>
+                  </li>
+          
+                  <li class="text-sm">
+                    <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600"> Crossfit </a>
+                  </li>
+                </ol>
+                
+              </nav>
+              
+            </div>
+            
+        </div>
+    </section>
     <!--==============================footer================================-->
     <footer>
       <div class="block">  
@@ -191,7 +209,8 @@
              </div>
       </div>
     </footer>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

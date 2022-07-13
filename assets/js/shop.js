@@ -10,10 +10,22 @@
     
     const btnVaciarCarrito = document.querySelector('#vaciarCarrito')
 
-    let carrito 
-    const carritoEnLocalStorage = JSON.parse(localStorage.getItem('carrito'))
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || []
 
-    
+    // let carrito 
+    // const carritoEnLocalStorage = JSON.parse(localStorage.getItem('carrito'))
+
+    // if(carritoEnLocalStorage){
+    //     carrito = carritoEnLocalStorage
+        
+    //     renderCarrito()
+    //     visualizarCantidad()
+    //     renderTotal()
+    // } else{
+    //     carrito = []
+    // }
+
+
 
 
     items.forEach((item)=>{
@@ -22,9 +34,7 @@
 
     div.innerHTML = `<div class="d-flex justify-content-between p-3">
                     <p class="lead mb-0">Oferta del Dia</p>
-                    <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong" style="width: 35px; height: 35px;">
-                    <p class="text-white mb-0 small">${item.cantidad}</p>
-                    </div>
+                    
                     </div>
                     <img src="${item.imagen}"
                     class="card-img-top" alt="Laptop" />
@@ -57,6 +67,9 @@
     const agregarItemAlCarrito = (iD) => {
         const prod = items.find( (item) => item.iD === iD) 
         carrito.push(prod)
+
+       checkAgregarItem(prod.tipo, prod.marca)
+
 
         localStorage.setItem('carrito', JSON.stringify(carrito))
 
@@ -118,19 +131,23 @@
         precioTotal.innerText = total
     }
 
-    if(carritoEnLocalStorage){
-        carrito = carritoEnLocalStorage
-        
-        renderCarrito()
-        visualizarCantidad()
-        renderTotal()
-    } else{
-        carrito = []
+
+    const checkAgregarItem = (art,art2)=>{
+    Toastify({
+        text: `${art}  ${art2} fue agregado al carrito con exito!`,
+        duration: 3000,
+        position: 'right',
+        gravity: 'bottom',
+        style: {
+          background: "linear-gradient(to right, #b53200, #f3c96a)",
+        }
+      }).showToast();
     }
+    renderCarrito()
+    visualizarCantidad()
+    renderTotal()
 
-
-
-
+    
 
     // function gestionarItems() {
     // const store = document.querySelector('#store');
