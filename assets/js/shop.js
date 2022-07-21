@@ -96,7 +96,7 @@
         carrito.splice(indice, 1)
         }
         Toastify({
-            text: `Se eliminó 1 unidad de ${remover.nombre}`,
+            text: `Se eliminó 1 unidad de ${remover.tipo} ${remover.marca}`,
             position: 'left',
             gravity: 'bottom',
             duration: 5000,
