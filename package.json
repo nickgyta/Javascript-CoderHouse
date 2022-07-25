@@ -55,6 +55,7 @@
   ],
   "dependencies": {
     "bootstrap": "^5.2.0-beta1",
+    "fullcalendar": "^5.11.0",
     "mdb-ui-kit": "^4.2.0",
     "sweetalert2": "^11.4.20",
     "tw-elements": "^1.0.0-alpha12"

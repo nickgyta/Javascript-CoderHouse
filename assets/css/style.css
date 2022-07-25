@@ -1,3 +1,18 @@
+body {
+    background: #040404ed;
+    color: #777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.9;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    word-wrap: break-word;
+}
+@font-face {
+    font-family: Crossfit;
+    src: url(Capture.ttf);
+}
 .justify-center {
     background: #000000a8;
     justify-content: space-evenly!important;
@@ -87,16 +102,25 @@ background-image: url('../img/crossfit.jpg');
     background-color: transparent;
 }
 
-@media (min-width: 992px){
+@media (min-width: 1200px){
 .navbar .container-fluid .navbar-brand {
     padding-top: 100px;
-    padding-bottom: 79px;
+    padding-bottom: 179px;
     margin-right: 2rem;
-    margin-left: 78px;
+    margin-left: -5px;
     font-size: 1.25rem;
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
+}
+.navbar-collapse {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    background-color: #000000a8;
+    margin-left: 41px;
 }
 }
 .navbar-collapse {
@@ -451,4 +475,265 @@ p {
     background-color: red;
     font-size: 20px;
     border-color: black !important
+}
+#gkBg {
+    background: #fff0 !important;
+    margin: 0px auto;
+    margin-top: -58px !important;
+    max-width: 1600px;
+    width: 100%;
+}
+.frontpage.dark-bottom #gkPageContent {
+    background-size: auto auto;
+    padding: 0 0 520px 0;
+    position: relative;
+}
+.frontpage #gkDarkBottom:before {
+    height: 200px;
+    top: -100px;
+    -webkit-transform: skewY(8deg);
+    -moz-transform: skewY(8deg);
+    -ms-transform: skewY(8deg);
+    -o-transform: skewY(8deg);
+    transform: skewY(8deg);
+}
+#gkPageContent {
+    background: #000000f2;
+    position: relative;
+    padding: 2px;
+    transform: skewY(-5deg);
+    height: 345px;
+    width: 101%;
+}
+.frontpage.dark-bottom #gkPageContent > .gkPage {
+    position: relative;
+    z-index: 1;
+}
+.frontpage.dark-bottom #gkDarkBottom {
+    background: #1e1e1e url(https://crossfitntr.com/templates/gk_musicstate/images/common/dark_bottom_bg.jpg) no-repeat center center !important;
+    bottom: -450px;
+    height: 1000px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+@media (max-width: 1200px) {
+.gkPage {
+    padding: 0 10px;
+}}
+.gkPage {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto!important;
+    padding-top: 112px;
+
+}
+
+#gkContent, #gkPageContent {
+    width: 100%;
+}
+#gkContentWrap {
+    width: 100%;
+}
+#gkContentWrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+#gkTop2 {
+    overflow: hidden;
+}
+#gkTop2, #gkBottom1, #gkBottom2 {
+    clear: both;
+}
+.box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 100%;
+}
+div.content {
+    clear: both;
+    margin-top: 28px;
+    margin-bottom: -21px;
+}
+.gkTitle, h3.header, #gkHeaderMod h1 {
+    font-family: capture-it, Arial, sans-serif;
+    color: #f1862b !important;
+}
+small{
+    color: #f3c96a !important;
+}
+.tcenter {
+    text-align: center;
+}
+small {
+    font-size: 100% !important;
+}
+#gkMainbody {
+    margin-bottom: 70px;
+}
+.frontpage .blog-featured {
+    margin-top: -100px;
+}
+#gkMainbody .gkSectionNav {
+    bottom: -100px;
+}a:hover, a:active, a:focus, #gkMainbody div.tags a:hover, #gkMainbody a, #gkMainbody header h1 a:active, #gkMainbody header h1 a:focus, #gkMainbody header h1 a:hover, #gkMainbody header h2 a:active, #gkMainbody header h2 a:focus, #gkMainbody header h2 a:hover, #k2Container article header h2 a:active, #k2Container article header h2 a:focus, #k2Container article header h2 a:hover, #gkSidebar .box a:hover, #eb .eb-post-head a:hover, #eb .eb-tags .cell-tags a:hover, #eb .eb-showcase-content a:hover, #eb .eb-entry-head a:hover, #eb .eb-entry-author-bio h3 a:hover, #eb .eb-related-title a:hover {
+    color: #7db61c;
+}body[data-desktop="true"] #gkBottomSection, body[data-desktop="true"].frontpage #gkBottom3, body[data-desktop="true"].frontpage #gkDarkBottom {
+    background-attachment: fixed!important;
+}
+.frontpage.dark-bottom #gkDarkBottom {
+    background: #1e1e1e url(../images/common/dark_bottom_bg.jpg) no-repeat center center;
+    bottom: -450px;
+    height: 1000px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.frontpage.dark-bottom .gkDarkBottom + #gkBottom1 {
+    margin-top: -200px;
+    padding: 0 0 120px 0;
+    position: relative;
+    z-index: 1;
+}
+#gkBottom1, #gkBottom2, #gkBottom3, #gkBottom4 {
+    padding: 70px 0;
+    overflow: hidden;
+    clear: both;
+}
+.frontpage #gkBottom1 .gkPage, .frontpage #gkBottom2 .gkPage, .frontpage #gkBottom3 .gkPage, .frontpage #gkBottom4 .gkPage {
+    max-width: 100%;
+}
+@media(max-width: 1200px){
+.gkPage {
+    padding: 0 10px;
+}}
+.gkPage {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto!important;
+}
+#gkBottom1 .box.normal-width, #gkBottom2 .box.normal-width, #gkBottom3 .box.normal-width, #gkBottom4 .box.normal-width {
+    max-width: 1200px;
+}
+#gkBottom1 .box.normal-width, #gkBottom2 .box.normal-width, #gkBottom3 .box.normal-width, #gkBottom4 .box.normal-width {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    background-color: #363434;
+}
+div.content {
+    clear: both;
+    margin-top: 15px;
+}
+.box.white {
+    color: #fff!important;
+}
+.box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 100%;
+}
+@font-face {
+    font-family: Crossfit;
+    src: url(Capture.ttf);
+}
+.gkTitle {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    font-family: Crossfit, Arial, sans-serif;
+    text-transform: uppercase;
+}
+.box.white .gkSubtitle {
+    color: #fff;
+}
+.gkSubtitle {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    text-align: center;
+    text-transform: none;
+    color: #f1862b;
+}
+.box.white .gkSubtitle {
+    color:  #f3c96a !important;
+}
+.box.white .header, .box.white .gkTitle, .box.white .gkSubtitle {
+        color: #fff;
+        transform: skewY(2deg);
+        padding-top: 40px;
+    }
+    .gk-special-content {
+        background-color: rgb(0 0 0 / 75%);
+        padding: 2px;
+        margin-top: 213px;
+        margin-left: -10px;
+        margin-bottom: -107px;
+        padding-top: 31px;
+        transform: skewY(-4deg);
+        height: 637px;
+        width: 102%;
+        top: 293px;
+    }
+.demo-typo-col2 {
+    float: left;
+    width: 50%;
+}
+.demo-typo_padd {
+    padding: 0 15px;
+}
+p.numblocks {
+    margin: 0 0 24px;
+    min-height: 48px;
+    padding: 0 0 0 82px !important;
+    position: relative;
+}
+p.num-3 span {
+    color: #f1862b !important;
+    border-color: #f1862b !important;
+}
+p.numblocks span {
+    border-right: 2px solid #ccc;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    height: 36px;
+    left: 0;
+    line-height: 36px;
+    position: absolute;
+    top: 4px;
+    width: 48px;
+}
+small {
+    font-size: 75%;
+}
+.demo-typo-col2 {
+    float: left;
+    width: 50%;
+}
+.demo-typo_padd {
+    padding: 0 15px;
 }
